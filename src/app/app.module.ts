@@ -10,7 +10,6 @@ import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { errorInterceptorProvider, jwtInterceptorProvider } from './core/interceptors';
 import { AppLoadService } from './core/services/app-load.service';
-import { QuillModule } from 'ngx-quill';
 
 
 export function initializeApp(injector: Injector) {
@@ -32,12 +31,6 @@ export function initializeApp(injector: Injector) {
     AppRoutingModule,
     NgxPermissionsModule.forRoot(),
     CoreModule.forRoot(),
-    QuillModule.forRoot({
-      customOptions: [{
-        import: 'formats/font',
-        whitelist: ['mirza', 'roboto', 'aref', 'serif', 'sansserif', 'monospace']
-      }]
-    })
   ],
   providers: [
     errorInterceptorProvider,
