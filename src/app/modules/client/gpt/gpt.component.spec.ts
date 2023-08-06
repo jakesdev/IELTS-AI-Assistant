@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListeningComponent } from './listening.component';
+import { GptComponent } from './gpt.component';
 
-describe('ListeningComponent', () => {
-  let component: ListeningComponent;
-  let fixture: ComponentFixture<ListeningComponent>;
+describe('GptComponent', () => {
+  let component: GptComponent;
+  let fixture: ComponentFixture<GptComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ListeningComponent]
+      declarations: [GptComponent]
     });
-    fixture = TestBed.createComponent(ListeningComponent);
+    fixture = TestBed.createComponent(GptComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

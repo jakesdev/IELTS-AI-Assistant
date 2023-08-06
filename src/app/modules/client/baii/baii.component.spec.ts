@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SpeakingComponent } from './speaking.component';
+import { BaiiComponent } from './baii.component';
 
-describe('SpeakingComponent', () => {
-  let component: SpeakingComponent;
-  let fixture: ComponentFixture<SpeakingComponent>;
+describe('BaiiComponent', () => {
+  let component: BaiiComponent;
+  let fixture: ComponentFixture<BaiiComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SpeakingComponent]
+      declarations: [BaiiComponent]
     });
-    fixture = TestBed.createComponent(SpeakingComponent);
+    fixture = TestBed.createComponent(BaiiComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

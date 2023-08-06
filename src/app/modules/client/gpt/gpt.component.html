@@ -1,0 +1,38 @@
+<div class="min-h-full">
+  <div class="bg-gray-800 pb-32">
+    <header class="py-10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center gap-2">
+      <div class="w-[64px]">
+        <app-svg-icon [name]="'chat_gpt'" [width]="20"></app-svg-icon>
+      </div>
+        <h1 class="text-3xl font-bold tracking-tight text-white">
+        GPT Assistant</h1>
+      </div>
+    </header>
+  </div>
+
+  <main class="-mt-32">
+    <div class="mx-auto max-w-7xl px-4 pb-12 sm:px-6 lg:px-8">
+      <!-- Your content -->
+      <div class="w-full bg-white rounded-md p-4 grid grid-cols-2 gap-4 border">
+        <div>
+          <div class="gpt">
+            <textarea class="w-full border p-2" [(ngModel)]="content"></textarea>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-2">
+              <button type="submit"
+              (click)="giveScore()"
+                      class="flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Improve</button>
+              <button type="submit"
+                      class="flex w-full justify-center rounded-md bg-blue-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-blue-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500">Give Score</button>
+            </div>
+          </div>
+        </div>
+        <div class="">
+        <label for="feedback" class="font-bold">ChatGPT:</label>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eius id et ex. Libero dolorum ea provident unde dolores iusto. Voluptatibus nam dolore repudiandae illo et at tenetur laboriosam, enim incidunt debitis harum, modi inventore placeat consequuntur dolor dolorum obcaecati consequatur voluptate, numquam temporibus. Alias vitae numquam beatae sapiente eum labore nam ut id, veritatis nulla voluptates dolor expedita omnis iusto repellendus cum, mollitia provident ad quam voluptas perferendis delectus corporis nobis sed. Saepe sapiente dolorum corrupti? Facere pariatur adipisci voluptatibus, quidem perspiciatis earum quaerat harum magnam quo vitae obcaecati doloremque mollitia molestias totam repellat magni maiores est tenetur voluptates! Veritatis iusto sapiente provident repellat nisi a maiores, expedita dolorem. Minima mollitia ad commodi deleniti minus voluptate, id placeat nemo eos, facere neque sequi inventore assumenda rem quibusdam consequatur reprehenderit quis porro quaerat ab expedita maiores aspernatur. Corporis cum, numquam officiis illum ut veritatis vero? Quos, est. Laudantium in doloremque quidem repellendus doloribus. Pariatur voluptatum nulla ducimus incidunt aut laboriosam reprehenderit cumque minima repellendus eum molestiae odit placeat totam officiis provident vel animi sint soluta esse ipsa beatae aperiam est, vero quidem. Ipsam temporibus et incidunt odit dolor adipisci exercitationem expedita nulla sequi ducimus, soluta tempore nam eveniet perferendis ratione id rerum eligendi! Repudiandae eum dolore quas ipsam nulla, excepturi praesentium, voluptatem enim cumque ex reprehenderit? Iusto, at architecto eos dignissimos natus corrupti. Consequuntur atque obcaecati officiis tempora, explicabo quisquam incidunt unde, nulla amet magnam deserunt tenetur quidem ad ipsa repellendus. Aperiam tempora a vitae facilis minus. Delectus officiis odio, corporis, corrupti nesciunt officia quisquam non voluptate esse, illo repellat eveniet asperiores accusamus autem iure maiores eos quasi numquam quo quis quia at quidem! Libero praesentium molestias et sint, reprehenderit eligendi est commodi maxime dolor at error quas debitis blanditiis eos quidem incidunt, nemo sit minima, quod soluta. Ipsam quisquam eligendi impedit repellendus quam saepe ipsa tenetur. Neque incidunt iusto minima fugiat inventore, ipsum expedita libero perspiciatis reiciendis asperiores pariatur, aliquid assumenda quo vero sunt, molestiae beatae quisquam amet blanditiis. Commodi id in iusto vero non officia minima, voluptatum, quae quia nesciunt, odio obcaecati molestias fugiat pariatur. Qui, neque. Libero dolore, vero earum iure aperiam aliquid nulla quae amet veniam alias maiores consequuntur praesentium, dolorem incidunt saepe nobis! Fugit accusamus distinctio amet reprehenderit nisi ullam expedita nobis vero consectetur cumque suscipit dolore vitae nostrum esse ea voluptatum iste, possimus saepe ipsa incidunt obcaecati perspiciatis quisquam. Molestias quas ut reiciendis! Totam!
+
+          </div>
+      </div>
+    </div>
+  </main>
+</div>

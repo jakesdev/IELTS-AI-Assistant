@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReadingComponent } from './reading.component';
+import { ReadingComponent } from './donation.component';
 
 describe('ReadingComponent', () => {
   let component: ReadingComponent;

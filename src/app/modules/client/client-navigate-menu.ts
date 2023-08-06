@@ -2,12 +2,17 @@ import { NavigateMenuModel } from '../../shared/models/navigate-menu.model';
 
 export const clientNavigateMenu: NavigateMenuModel[] = [
   // {
-  //   icon: 'document',
-  //   name: 'Document',
-  //   url: 'document'
+  //   icon: 'baii',
+  //   name: 'BAI',
+  //   url: 'baii'
   // },
   {
-    icon: 'writing',
+    icon: 'gpt',
+    name: 'GPT',
+    url: 'gpt'
+  },
+  {
+    icon: 'icon_edit',
     name: 'Writing',
     url: 'writing',
     children: [
@@ -24,18 +29,23 @@ export const clientNavigateMenu: NavigateMenuModel[] = [
     ]
   },
   {
-    icon: 'reading',
-    name: 'Reading',
-    url: 'reading'
+    icon: 'donate',
+    name: 'Donate',
+    url: 'donation'
   },
-  {
-    icon: 'Listening',
-    name: 'Listening',
-    url: 'listening'
-  },
-  {
-    icon: 'speaking',
-    name: 'Speaking',
-    url: 'speaking'
-  }
+  // {
+  //   icon: 'reading',
+  //   name: 'Reading',
+  //   url: 'reading'
+  // },
+  // {
+  //   icon: 'Listening',
+  //   name: 'Listening',
+  //   url: 'listening'
+  // },
+  // {
+  //   icon: 'speaking',
+  //   name: 'Speaking',
+  //   url: 'speaking'
+  // }
 ];

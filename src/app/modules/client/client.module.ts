@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import { ClientComponent } from './client.component';
 import { Route, RouterModule } from '@angular/router';
 import { SvgIconsRegistry } from '../../core/services';
-import { svgIconDashboard } from '../../../assets/icons/svg-icons.constants';
+import { svgIconChatGpt, svgIconDashboard, svgIconEdit } from '../../../assets/icons/svg-icons.constants';
 import { SvgIconComponent } from '../../theme/components/svg-icon/svg-icon.component';
 import { AdminLayoutModule } from '../../theme/layouts/admin-layout/admin-layout.module';
 import { AppLayoutModule } from '../../theme/layouts/app-layout/app-layout.module';
 
 const SVG_ICONS = [
-  svgIconDashboard
+  svgIconDashboard,
+  svgIconEdit,
+  svgIconChatGpt
 ];
 
 export const clientRoutes: Route[] = [
@@ -19,9 +21,9 @@ export const clientRoutes: Route[] = [
     children: [
       { path: '', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
       { path: 'writing', loadChildren: () => import('./writing/writing.module').then(m => m.WritingModule) },
-      { path: 'reading', loadChildren: () => import('./reading/reading.module').then(m => m.ReadingModule) },
-      { path: 'listening', loadChildren: () => import('./listening/listening.module').then(m => m.ListeningModule) },
-      { path: 'speaking', loadChildren: () => import('./speaking/speaking.module').then(m => m.SpeakingModule) },
+      { path: 'donation', loadChildren: () => import('./donation/donation.module').then(m => m.DonationModule) },
+      { path: 'baii', loadChildren: () => import('./baii/baii.module').then(m => m.BaiiModule) },
+      { path: 'gpt', loadChildren: () => import('./gpt/gpt.module').then(m => m.GptModule) },
       { path: 'setting', loadChildren: () => import('./setting/setting.module').then(m => m.SettingModule) },
     ]
   }
