@@ -4,10 +4,10 @@ import { HomeComponent } from './home.component';
 import { Route, RouterModule } from '@angular/router';
 import { SvgIconComponent } from '../../../theme/components/svg-icon/svg-icon.component';
 import { SvgIconsRegistry } from '@app/core/services';
-import { svgIconDashboard } from '../../../../assets/icons/svg-icons.constants';
+import { svgIconDashboard, svgIconStar } from '../../../../assets/icons/svg-icons.constants';
 
 const SVG_ICONS = [
-  svgIconDashboard
+  svgIconStar
 ];
 
 export const homeRoutes: Route[] = [
